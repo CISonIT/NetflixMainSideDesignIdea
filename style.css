@@ -127,7 +127,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-        padding: 20px 150px;
+    padding: 20px 150px;
 }
 
 .article__text{
@@ -145,7 +145,40 @@
 }
 
 .section__art_wrapper{
+    margin-right: 5%;
     min-width: 30%;
     height: 200px;
     background-color: red;
+}
+
+.lower__content{
+   /* Margin-top do zmiany, jest tymczasowoy */
+    margin-top: 20vh;
+    background-color: black;
+    color: white;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq__h2{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.faq__questions{
+    display: flex;
+    flex-direction: column;
+}
+
+.question{
+    list-style: none;
+    min-width: 70vw;
+    background-color: yellow;
+    margin: 1vh 0;
+    padding: 3vh;
 }
