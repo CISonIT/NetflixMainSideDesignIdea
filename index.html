@@ -50,7 +50,7 @@
             </div>
             <div class="section__art_wrapper">
                 <div class="outer_wrapper">
-                    <video class="video" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"></video>
+                    <video loop autoplay class="video" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"></video>
                     <img class="image" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
                 </div>
             </div>
@@ -60,13 +60,15 @@
                 <h2 class="article__title">Pobierz ulubione tytuły i oglądaj offline.</h2>
                 <p class="article__description">Zapisz ulubione tytuły, aby zawsze mieć coś do obejrzenia</p>
             </div>
-            <div class="section__art_wrapper">
+            <div class="section__art_wrapper section__art_wrapper--even">
                 <div class="outer_wrapper">
                     <img class="image" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
                     <div class="card">
                         <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="" class="image image--small">
-                        <p class="card__upper_text">Stranger Things</p>
-                        <p class="card__lower_text">Pobieranie...</p>
+                        <div class="card__text_wrapper">
+                            <p class="card__upper_text">Stranger Things</p>
+                            <p class="card__lower_text">Pobieranie...</p>
+                        </div>
                         <div class="card__animation"></div>
                     </div>
                 </div>
@@ -80,7 +82,7 @@
             <div class="section__art_wrapper">
                 <div class="outer_wrapper">
                     <div class="outer_wrapper">
-                        <video class="video" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"></video>
+                        <video loop autoplay class="video video--small" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"></video>
                         <img class="image" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
                     </div>
                 </div>
@@ -91,7 +93,7 @@
                 <h2 class="article__title">Utwórz profile dla dzieci.</h2>
                 <p class="article__description">Pozwól dzieciom przeżywać przygody w towarzystwie uwielbianych bohaterów — w specjalnej sekcji serwisu oferowanej bezpłatnie w ramach członkostwa.</p>
             </div>
-            <div class="section__art_wrapper">
+            <div class="section__art_wrapper section__art_wrapper--even">
                 <div class="outer_wrapper">
                     <img src="https://occ-0-2507-1432.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABcwicdUnVW-uEe-71jLGMbTN6JYYmrI9xO0EO-Cco_UsxMOAaDw3-tqTuKX625piqdEDlBk6IwJbPgaAsuQKpr10uWTezLH-zs2R.png?r=107" alt="" class="image">
                 </div>
@@ -103,15 +105,15 @@
         <section class="faq">
             <h2 class="faq__h2">Często zadawane pytania</h2>
             <ul class="faq__questions">
-                <li class="question"><a href="#"><span class="question__text">Czym jest Netflix?</span><span class="question__plus">+</span></a></li>
-                <li class="question"><a href="#"><span class="question__text">Ile kosztuje korzystanie z Netflix?</span></a></li>
-                <li class="question"><a href="#"><span class="question__text">Gdzie mogę oglądać?</span><span class="question__plus">+</span></a></li>
-                <li class="question"><a href="#"><span class="question__text">Jak zrezygnować z członkowsktwa?</span><span class="question__plus">+</span></a></li>
-                <li class="question"><a href="#"><span class="question__text">Jakie materiały mogę oglądać w seriwsie Netflix?</span><span class="question__plus">+</span></a></li>
-                <li class="question"><a href="#"><span class="question__text">Czy Netflix jest odpowiedni dla dzieci?</span><span class="question__plus">+</span></a></li>
+                <li class="question"><a class="question__link" href="#"><span class="question__link_text">Czym jest Netflix?</span><span class="question___link_plus">+</span></a></li>
+                <li class="question"><a class="question__link"  href="#"><span class="question__link_text">Ile kosztuje korzystanie z Netflix?</span><span class="question___link_plus">+</span></a></li>
+                <li class="question"><a class="question__link"  href="#"><span class="question__link_text">Gdzie mogę oglądać?</span><span class="question___link_plus">+</span></a></li>
+                <li class="question"><a class="question__link"  href="#"><span class="question__link_text">Jak zrezygnować z członkowsktwa?</span><span class="question___link_plus">+</span></a></li>
+                <li class="question"><a class="question__link"  href="#"><span class="question__link_text">Jakie materiały mogę oglądać w seriwsie Netflix?</span><span class="question___link_plus">+</span></a></li>
+                <li class="question"><a class="question__link"  href="#"><span class="question__link_text">Czy Netflix jest odpowiedni dla dzieci?</span><span class="question___link_plus">+</span></a></li>
             </ul>
         </section>
-        <div class="email">
+        <div class="email email--lower">
             <p class="p__email">Zaczynamy oglądać? Wprowadź adres e&#8211;mail, aby utworzyć lub odnowić konto.</p>
             <form action="" method="get" class="email__form">
                 <lable class="form__label" for="email"></lable>
@@ -122,28 +124,28 @@
     </div>
 
     <footer class="footer">
-        <p class="footer__p footer__p--big">Pytania? Zadzwoń pod numer <a href="#"><span>00 800 112 4392</span></a></p>
+        <p class="footer__p footer__p--big">Pytania? Zadzwoń pod numer <a class="link" href="#"><span class="link__text">00 800 112 4392</span></a></p>
         <ul class="footer__links">
-            <li class="link"><a href="#"><span class="link__text">Często zadawane pytania</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Relacje z inwestorami</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Jak oglądać?</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Informacje o firmie</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Informacje prawne</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Centrum pomocy</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Praca</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Warunki korzystania</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Skontaktuj się z nami</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Tylko na Netflix</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Konto</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Zrealizuj karty podarunkowe</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Prywatność</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Test prędkości połączenia</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Media Center</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Kup karty podarunkowe</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Ustawienia plików cookie</span><span class="link__plus">+</span></a></li>
-            <li class="link"><a href="#"><span class="link__text">Gwarancja prawna</span><span class="link__plus">+</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Często zadawane pytania</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Relacje z inwestorami</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Jak oglądać?</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Informacje o firmie</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Informacje prawne</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Centrum pomocy</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Praca</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Warunki korzystania</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Skontaktuj się z nami</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Tylko na Netflix</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Konto</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Zrealizuj karty podarunkowe</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Prywatność</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Test prędkości połączenia</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Media Center</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Kup karty podarunkowe</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Ustawienia plików cookie</span></a></li>
+            <li class="li__link"><a class="link" href="#"><span class="link__text">Gwarancja prawna</span></a></li>
         </ul>
-        <form action="" method="get" class="form">
+        <form action="" method="get" class="form form--footer">
             <label class="form__label" for="languages"></label>
             <select name="languages" id="languages" class="form__select">
                 <option value="Polish" class="form__select_option">Polish</option>

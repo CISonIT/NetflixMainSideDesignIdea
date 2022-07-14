@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header{
@@ -98,7 +99,7 @@
 .email__form{
     margin-top: 20px;
     display: flex;
-    min-width: 70vw;
+    min-width: 65vw;
     max-width: 80vw;
     min-height: 70px;
     justify-content: stretch;
@@ -131,8 +132,7 @@
 }
 
 .article__text{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 20px 150px;
+    margin: 20px 0 20p 150px;
 }
 
 .article__title{
@@ -145,15 +145,70 @@
 }
 
 .section__art_wrapper{
-    margin-right: 5%;
+    margin-right: 200px;
     min-width: 30%;
-    height: 200px;
-    background-color: red;
+    height: 80%;
+    position: relative;
+}
+
+.section__art_wrapper--even{
+    order: -1;
+}
+
+.video{
+    position: absolute;
+    width: 120%;
+    top: 20%;
+    left: 20%;
+}
+
+.video--small{
+    width: 98%;
+    top: 10%;
+    left: 25%;
+}
+
+
+.image{
+    position: absolute;
+    width: 150%;
+}
+
+.card{
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 20px;
+    min-height: 20vh;
+    transform: translate(25%, 200%);
+}
+
+.card__lower_text{
+    font-size: 15px;
+    color: blue;
+}
+
+.card__animation{
+    flex-grow: 1;
+    justify-self: flex-end;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    transform: translate(40%, -10%);
+}
+
+.image--small{
+    margin: 1vh;
+    padding: .6vh;
+    width: 20%;
+    position: static;
 }
 
 .lower__content{
-   /* Margin-top do zmiany, jest tymczasowoy */
-    margin-top: 20vh;
     background-color: black;
     color: white;
 }
@@ -166,8 +221,8 @@
 }
 
 .faq__h2{
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+    font-size: 50px;
+    margin: 7vh;
 }
 
 .faq__questions{
@@ -177,8 +232,67 @@
 
 .question{
     list-style: none;
-    min-width: 70vw;
-    background-color: yellow;
-    margin: 1vh 0;
-    padding: 3vh;
+    min-width: 60vw;
+    background-color: rgb(45, 45, 45);
+    margin: 0.8vh 0;
+    padding: 2vh 5vh;
+    font-size: 25px;
+}
+
+.question__link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question__link_text{
+    color: white;
+}
+
+.question___link_plus{
+    color: white;
+    font-size: 40px;
+}
+
+.email--lower{
+    padding: 9vh 0;
+    border-bottom: 10px solid rgb(80, 80, 80);
+}
+
+.footer{
+    background-color: black;
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vh 40vh 5vh 40vh;
+}
+
+.footer__links{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.li__link{
+    list-style: none;
+}
+
+.link{
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.link__text{
+    line-height: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.link__text:hover{
+    text-decoration: underline;
+}
+
+.form--footer{
+    margin-left: -10px;
 }
